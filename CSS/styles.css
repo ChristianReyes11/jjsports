@@ -1,0 +1,216 @@
+/* CSS/styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url("/Resources/home.jpg");
+    background-size: auto;
+    background-color: #39a1b0;
+    color: #000000;
+    padding: 50px 0;
+}
+
+header h1 {
+    background-color: aquamarine;
+    color: #000000;
+    text-align: center;
+    border-radius: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: aquamarine;
+    color: #000000;
+    text-align: center;
+    border-radius: 100px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    font-style: oblique;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.producto {
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.producto img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #39a1b0;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 50%;
+    height: auto;
+    max-width: 300px;
+    animation: slide 5s infinite;
+}
+
+@keyframes slide {
+    0% { opacity: 1; }
+    33.33% { opacity: 0; }
+    66.66% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Estilos de los productos destacados */
+.destacados {
+    text-align: center;
+    margin: 20px 0;
+}
+  
+.product {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    text-align: left;
+}
+  
+.product img {
+    width: 60%;
+    height: 50%;
+    align-items: center;
+}
+  
+.product h3 {
+    margin-top: 10px;
+}
+  
+.product p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+  
+.product a {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+  
+.product a:hover {
+    background-color: #555;
+}
+
+/* Agrega estos estilos al final de tu archivo CSS */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+.logo {
+    background-color: #000000;
+    width: 50px; /* Ajusta el ancho según tus necesidades */
+    height: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.company-info,
+.contact-info {
+    width: 100%;
+    max-width: 400px;
+}
+
+.company-info h3,
+.contact-info h3 {
+    color: #e44d26;
+}
+
+.company-info p,
+.contact-info ul {
+    font-size: 0.9em;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #e44d26;
+}
+
+/* Estilos para hacer el footer responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company-info,
+    .contact-info {
+        width: 100%;
+        max-width: none;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
